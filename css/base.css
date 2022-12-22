@@ -1,0 +1,447 @@
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.grid_column-list {
+    width: 20%;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.grid_column-products {
+    width: 80%;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.grid_column-product {
+    width: 25%;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+/* ------------- Responsive ---------------- */
+
+/* Mobile */
+@media screen and (max-width:740px) {
+    header {
+        height: 140px;
+    }
+    .header_container {
+        height: 140px;
+    }
+    .header_action {
+        margin-right: 30px;
+    }
+    .header_action-user {
+        display: none;
+    }
+    .header_action-cart {
+        display: none;
+    }
+    .header_action-menu {
+        font-size: 2.2rem;
+        cursor: pointer;
+        margin-left: 7px;
+        display: block;
+    }
+    .header_navbar {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: #444;
+        z-index: 99;
+        transform: translateX(-100%);
+        transition: 0.4s;
+    }
+    .header_navbar-list  {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .header_logo {
+        width: 200px;
+    }
+    .header_navbar-item {
+        float: none;
+    }
+    .header_navbar-link {
+        color: #fff;
+        text-align: center;
+        font-size: 1.8rem;
+    }
+    .header_navbar-submenu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1;
+        background-color: #1E1E1E;
+        padding-left: 0;
+        width: 100%;
+        border-radius: 4px;
+        box-shadow: 5px 5px 10px #888888;
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: 0.5s;
+    }
+    .header_navbar-submenuLink {
+        font-size: 1.9rem;
+    }
+    .header_navbar-close {
+        display: block;
+        font-size: 1.6rem;
+        color: #444;
+        width: 120px;
+        padding: 10px 10px;
+        margin: auto;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+    }
+    .header_navbar-login {
+        display: block;
+        font-size: 2rem;
+        text-decoration: none;
+        text-align: center;
+        margin-top: 280px;
+        color: #fff;
+        cursor: pointer;
+    }
+    /* Product Mobile */
+    .grid_column-navbar {
+        display: none;
+    }
+    .grid_column-products {
+        width: 100%;
+    }
+    .slider-wrapper {
+        height: 215px;
+    }
+    .grid_column-product {
+        width: 100%;
+    }
+    .news {
+        margin-top: 50px;
+        padding: 0 0;
+    }
+    .news_info {
+        display:block;
+        
+    } 
+
+    .info-img {
+        width: 150px;
+    }
+    .news_info-viewer {
+        margin-top: 20px;
+    }
+    .news_info-link {
+        text-decoration: none;
+        display: block;
+        color: #000;
+        font-size: 1.5rem;
+        width: 228px;
+    }
+    .news_info-viewer1 {
+        display: flex;
+        margin-bottom: 25px;
+    }
+
+    /* Footer mobile */
+    .widget-footer {
+        width: 100%;
+    }
+    .login-email-form {
+        width: 320px;
+    }
+    .widget-footer-map {
+        width: 85%;
+        display: block;
+        margin: auto;
+    }
+    .footer_bottom-title {
+        font-size: 1.1rem;
+    }
+}
+/* Tablet */
+/* Surface Pro 7 */
+@media screen and (min-width:912px) and (max-width:1368px){
+    /* -------- Header -------- */
+    .header_logo {
+        width: 200px;
+    }
+    .header_navbar {
+        margin-right: 23px;
+    }
+    .header_navbar-link {
+        text-decoration: none;
+        display: block;
+        font-size: 1.4rem;
+        color: #000;
+        padding: 20px 12px;
+    }
+    .header_action {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 24px;
+    }
+    .header_action-search {
+        font-size: 1.5rem;
+        margin-right: 12px;
+        cursor: pointer;
+        position: relative;
+    }
+    .header_action-user {
+        font-size: 1.5rem;
+        cursor: pointer;
+        margin-right: 3px;
+        margin-left: 3px;
+    }
+    .header_action-cart {
+        font-size: 1.5rem;
+        margin-left: 12px;
+        cursor: pointer;
+        position: relative;
+    }
+    .header_navbar-submenu {
+        visibility: hidden;
+        opacity: 1;
+    }
+    /* ------------------------ */
+
+    /* -------- Products ------*/
+    .grid_column-navbar {
+        padding: 12px 6px;
+        border: 1px solid #000;
+        border-radius: 4px;
+        height: 800px;
+        padding-left: 8px;
+        padding-right: 8px;
+        margin-left: 16px;
+    }
+    .grid_column-products {
+        width: 74%;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .slider-wrapper {
+        width: 100%;
+        height: 350px;
+        overflow: hidden;
+        position: relative;
+        border-radius: 4px;
+    }
+    .grid_column-product {
+        width: 50%;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+
+
+    /* ------------------------ */
+    /* -------- News ---------- */
+    .news_title::before {
+        content: "";
+        display: block;
+        position: absolute;
+        background-color: #000;
+        width: 47%;
+        height: 1px;
+        top: 50%;
+        right: -30px;
+    }
+    .news_title::after {
+        content: "";
+        display: block;
+        position: absolute;
+        background-color: #000;
+        width: 47%;
+        height: 1px;
+        top: 50%;
+        left: -30px;
+    }
+    .news_info {
+        display: block;
+    }
+
+    .news_info-viewer  {
+        margin-top: 50px;
+    }
+    .news_info-links {
+        margin-left: 36px;
+    }
+    .news_info-link {
+        text-decoration: none;
+        display: block;
+        color: #000;
+        font-size: 2.2rem;
+        width: 430px;
+    }
+    /* ------------------------ */
+
+    /* -------- footer ------- */
+    .widget-footer {
+        width: 50%;
+        padding: 0px 26px;
+    }
+
+
+
+    /* ----------------------- */
+}
+/* Ipad Air */
+@media screen and (min-width:820px) and (max-width:1280px) {
+     /* -------- Header -------- */
+     .header_logo {
+        width: 200px;
+    }
+    .header_navbar {
+        margin-right: 23px;
+    }
+    .header_navbar-link {
+        text-decoration: none;
+        display: block;
+        font-size: 1.34rem;
+        color: #000;
+        padding: 20px 12px;
+    }
+    .header_action {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 24px;
+    }
+    .header_action-search {
+        font-size: 1.7rem;
+        margin-right: 12px;
+        cursor: pointer;
+        position: relative;
+    }
+    .header_action-user {
+        font-size: 1.7rem;
+        cursor: pointer;
+        margin-right: 3px;
+        margin-left: 3px;
+    }
+    .header_action-cart {
+        font-size: 1.7rem;
+        margin-left: 12px;
+        cursor: pointer;
+        position: relative;
+    }
+    .header_navbar-submenu {
+        visibility: hidden;
+        opacity: 1;
+    }
+    /* ------------------------ */
+
+    /* -------- Products ------*/
+    .grid_column-navbar {
+        padding: 12px 6px;
+        border: 1px solid #000;
+        border-radius: 4px;
+        height: 800px;
+        padding-left: 8px;
+        padding-right: 8px;
+        margin-left: 16px;
+    }
+    .grid_column-products {
+        width: 71%;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .slider-wrapper {
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+        position: relative;
+        border-radius: 4px;
+    }
+    .grid_column-product {
+        width: 50%;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+
+
+    /* ------------------------ */
+    /* -------- News ---------- */
+    .news_title::before {
+        content: "";
+        display: block;
+        position: absolute;
+        background-color: #000;
+        width: 47%;
+        height: 1px;
+        top: 50%;
+        right: -30px;
+    }
+    .news_title::after {
+        content: "";
+        display: block;
+        position: absolute;
+        background-color: #000;
+        width: 47%;
+        height: 1px;
+        top: 50%;
+        left: -30px;
+    }
+    .news_info {
+        display: block;
+    }
+
+    .news_info-viewer  {
+        margin-top: 50px;
+    }
+    .news_info-links {
+        margin-left: 36px;
+    }
+    .news_info-link {
+        text-decoration: none;
+        display: block;
+        color: #000;
+        font-size: 2.2rem;
+        width: 430px;
+    }
+    /* ------------------------ */
+
+    /* -------- footer ------- */
+    .widget-footer {
+        width: 50%;
+        padding: 0px 26px;
+    }
+
+
+
+    /* ----------------------- */
+}
+.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+/* Effect */
+@keyframes upDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }   
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* -------------------------------------------- */
